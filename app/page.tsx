@@ -283,8 +283,8 @@ const HomePage = () => {
                     <Star className="w-4 h-4 fill-amber-500" />
                     <Star className="w-4 h-4 fill-amber-500" />
                   </div>
-                  <p className="text-xl font-bold text-white italic">&quot;The most transparent advice I&apos;ve ever received in 20 years of business.&quot;</p>
-                  <p className="text-zinc-400 mt-2 font-medium">— Marcus Thorne, CEO</p>
+                  <p className="text-xl font-bold text-white italic">&quot;The most transparent advice I&apos;ve ever received in 15 years of business.&quot;</p>
+                  <p className="text-zinc-400 mt-2 font-medium">— Chaitanya Garg, CEO</p>
                 </div>
               </motion.div>
             </div>
@@ -306,11 +306,16 @@ const HomePage = () => {
               Joint our 10,000+ happy clients and get a personalized insurance quote in under 3 minutes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="bg-white text-blue-600 px-10 py-5 rounded-2xl font-black text-lg hover:scale-105 transition-all shadow-xl">
-                Get a Free Quote
+              <Link href="/advisor">
+                <button className="bg-white text-blue-600 px-10 py-5 rounded-2xl font-black text-lg hover:scale-105 transition-all shadow-xl flex items-center justify-center gap-2 group w-full sm:w-auto">
+                  Get a Custom Quote
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </button>
               </Link>
-              <Link href="/services" className="bg-blue-700 text-white border border-white/20 px-10 py-5 rounded-2xl font-black text-lg hover:bg-blue-800 transition-all">
-                Learn More
+              <Link href="/contact" className="w-full sm:w-auto">
+                <button className="bg-blue-700 text-white border border-white/20 px-10 py-5 rounded-2xl font-black text-lg hover:bg-blue-800 transition-all w-full">
+                  Contact our Experts
+                </button>
               </Link>
             </div>
           </motion.div>

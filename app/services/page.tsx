@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import {
     Heart,
@@ -191,13 +192,17 @@ const ServicesPage = () => {
                             Get a personalized consultation today and find the perfect plan for your needs.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <button className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-5 rounded-2xl font-bold text-lg transition-all flex items-center justify-center gap-2 group">
-                                Get a Custom Quote
-                                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                            </button>
-                            <button className="bg-transparent hover:bg-white/5 text-white border border-white/20 px-10 py-5 rounded-2xl font-bold text-lg transition-all">
-                                Talk to an Expert
-                            </button>
+                            <Link href="/advisor">
+                                <button className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-5 rounded-2xl font-bold text-lg transition-all flex items-center justify-center gap-2 group w-full sm:w-auto">
+                                    Get a Custom Quote
+                                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                                </button>
+                            </Link>
+                            <Link href="/contact" className="w-full sm:w-auto">
+                                <button className="bg-transparent hover:bg-white/5 text-white border border-white/20 px-10 py-5 rounded-2xl font-bold text-lg transition-all w-full">
+                                    Talk to an Expert
+                                </button>
+                            </Link>
                         </div>
                     </div>
 

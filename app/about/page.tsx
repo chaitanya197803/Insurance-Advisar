@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Shield, Target, Award, Users, ArrowRight, CheckCircle2 } from 'lucide-react';
+import Link from 'next/link';
 
 const AboutPage = () => {
     const fadeInUp = {
@@ -202,13 +203,17 @@ const AboutPage = () => {
                             right protection?
                         </motion.h2>
                         <motion.div {...fadeInUp} className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <button className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-5 rounded-2xl font-bold text-lg transition-all flex items-center justify-center gap-2 group">
-                                Get a Custom Quote
-                                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                            </button>
-                            <button className="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 px-10 py-5 rounded-2xl font-bold text-lg transition-all">
-                                Contact our Experts
-                            </button>
+                            <Link href="/advisor">
+                                <button className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-5 rounded-2xl font-bold text-lg transition-all flex items-center justify-center gap-2 group">
+                                    Get a Custom Quote
+                                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                                </button>
+                            </Link>
+                            <Link href="/contact" className="w-full sm:w-auto">
+                                <button className="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 px-10 py-5 rounded-2xl font-bold text-lg transition-all">
+                                    Contact our Experts
+                                </button>
+                            </Link>
                         </motion.div>
                     </div>
                 </div>
