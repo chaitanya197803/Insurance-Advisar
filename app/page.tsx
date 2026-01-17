@@ -23,7 +23,7 @@ const HomePage = () => {
     whileInView: { opacity: 1, y: 0 },
     viewport: { once: true },
     transition: { duration: 0.8, ease: "easeOut" }
-  };
+  } as const;
 
   const stagger = {
     whileInView: {
@@ -31,7 +31,7 @@ const HomePage = () => {
         staggerChildren: 0.2
       }
     }
-  };
+  } as const;
 
   const serviceHighlights = [
     {
