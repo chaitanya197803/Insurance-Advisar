@@ -21,7 +21,7 @@ type FormData = {
     weight: string;
     children: string;
     smoker: 'Yes' | 'No';
-    region: 'Northeast' | 'Northwest' | 'Southeast' | 'Southwest';
+    region: 'North India' | 'East India' | 'Central India' | 'West India' | 'South India';
 };
 
 const AdvisorPage = () => {
@@ -32,7 +32,7 @@ const AdvisorPage = () => {
         weight: '',
         children: '0',
         smoker: 'No',
-        region: 'Northeast',
+        region: 'North India',
     });
 
     const [isCalculated, setIsCalculated] = useState(false);
@@ -89,10 +89,11 @@ const AdvisorPage = () => {
 
         // 4. Regional multiplier (Market variance)
         const regionClustering: Record<string, number> = {
-            'Northeast': 1.02,
-            'Northwest': 0.95,
-            'Southeast': 1.08,
-            'Southwest': 0.98
+            'North India': 1.05,
+            'East India': 0.98,
+            'Central India': 1.00,
+            'West India': 1.08,
+            'South India': 1.02
         };
         totalYearly *= regionClustering[formData.region] || 1.0;
 
@@ -136,7 +137,7 @@ const AdvisorPage = () => {
             weight: '',
             children: '0',
             smoker: 'No',
-            region: 'Northeast',
+            region: 'North India',
         });
         setIsCalculated(false);
     };
