@@ -220,7 +220,7 @@ const HomePage = () => {
                   {service.description}
                 </p>
                 <Link href={service.href} className="flex items-center gap-2 text-blue-600 font-bold group/link">
-                  Learn Details
+                  Learn More
                   <ChevronRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
                 </Link>
               </motion.div>
