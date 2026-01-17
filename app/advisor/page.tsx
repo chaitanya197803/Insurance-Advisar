@@ -263,10 +263,11 @@ const AdvisorPage = () => {
                                         onChange={handleInputChange}
                                         className="w-full bg-zinc-50 dark:bg-zinc-800 border-none rounded-2xl px-5 py-4 text-zinc-900 dark:text-white focus:ring-2 focus:ring-blue-500 outline-none appearance-none sm:w-1/2"
                                     >
-                                        <option>Northeast</option>
-                                        <option>Northwest</option>
-                                        <option>Southeast</option>
-                                        <option>Southwest</option>
+                                        <option>North India</option>
+                                        <option>East India</option>
+                                        <option>Central India</option>
+                                        <option>West India</option>
+                                        <option>South India</option>
                                     </select>
                                 </div>
 
